@@ -91,7 +91,7 @@
               <div class="tips">这里是推荐理由这里是推荐理由</div>
             </div>
             <div class="add-fans">
-              <svg class="icon" aria-hidden="true">
+              <svg class="icon" :class="checked?'checked':''" aria-hidden="true" @click="addFans">
                 <use xlink:href="#icon-xuanzhong-"></use>
               </svg>
             </div>
@@ -116,16 +116,18 @@
   export default class HomePage extends Vue {
     defaultImg = defaultImg;
     cardIndex = 0;
+    checked = false;
+    addFans(){
+      console.log("2111")
+      this.checked = !this.checked;
+    }
     mounted() {
-      // this.defaultImg = defaultImg;
       this.topicSlider = new Siema({
         selector: this.$refs['topic-list'],
         startIndex: this.cardIndex,
         onChange: () => {
           // 滑动卡片修改卡片index
           this.cardIndex = this.topicSlider.currentSlide;
-          // 将换一换的分页回到0
-          // this.listPage = 0;
         }
       });
     }
