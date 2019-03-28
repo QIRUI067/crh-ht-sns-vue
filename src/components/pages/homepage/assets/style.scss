@@ -64,12 +64,12 @@
 
 .dh20 {
   height: 20px;
-  background-color: #F1F1F1;
 }
 
 .topic-area {
   height: 427px;
   position: relative;
+  background-color: #FFFFFF;
   .area-title {
     padding-left: 40px;
     height: 100px;
@@ -261,5 +261,22 @@
     text-align: center;
     background: #4188EA;
     color:#FFFFFF;
+  }
+}
+.sns-body{
+  position: relative;
+  width: 100%;
+  background-color: #F1F1F1;
+  .no-content{
+    font-size:28px;
+    color: #444444;
+    text-align: center;
+    .no-img{
+      margin: 20% auto 20px;
+      width: 100%;
+      height:200px;
+      background: url('./img/quesheng1@2x.png') center no-repeat;
+      background-size: contain;
+    }
   }
 }

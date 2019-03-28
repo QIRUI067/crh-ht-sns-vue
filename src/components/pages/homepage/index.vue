@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="dh20"></div>
-    <div class="active-user">
+    <div class="active-user" v-if="false">
       <div class="active-title">为你精心推荐了以下用户</div>
       <nb-list>
         <nb-list-item :height="120">
@@ -98,6 +98,12 @@
         </nb-list-item>
       </nb-list>
       <div class="go-sns">关注并开启社区之旅</div>
+    </div>
+    <div class="sns-body">
+      <div class="no-content">
+        <div class="no-img"></div>
+        <div>暂无内容</div>
+      </div>
     </div>
   </div>
 </template>
