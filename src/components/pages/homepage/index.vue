@@ -46,6 +46,12 @@
           <button>立即参与</button>
         </div>
       </div>
+            <!-- 卡片分页圆点 -->
+      <div class="pagination">
+        <i v-for="(card, i) in [1,2,3]" :key="i"
+          :class="{active: cardIndex === i}"
+        ></i>
+      </div>
     </div>
     <div class="dh20"></div>
   </div>
@@ -63,6 +69,7 @@
   })
   export default class HomePage extends Vue {
     defaultImg = defaultImg;
+    cardIndex = 0;
     mounted() {
       // this.defaultImg = defaultImg;
     }

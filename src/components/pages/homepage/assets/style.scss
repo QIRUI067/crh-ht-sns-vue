@@ -91,7 +91,7 @@
   }
 
   .topic-list {
-    height: 268px;
+    height: 250px;
     width: calc(100% - 80px);
     background: #479BF7 url('./img/topic_bg@2x.png') right bottom no-repeat;
     background-size: 206px;
@@ -134,6 +134,29 @@
         background-color: white;
         border: none;
         color: #479BF7;
+      }
+    }
+  }
+
+  .pagination {
+    position: absolute;
+    height: 24px;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+
+    i {
+      display: inline-block;
+      width: 6Px;
+      height: 6Px;
+      border-radius: 3Px;
+      background: #AEAEAE;
+      margin: 0 10px;
+
+      &.active {
+        background: #479BF7;
+        width: 12Px;
       }
     }
   }
