@@ -83,26 +83,58 @@
       <nb-list>
         <nb-list-item :height="120">
           <div class="img-src">
-              <img :src="defaultImg"></img>
-              <div class="user-group haiboshi"></div>
-            </div>
-            <div class="user-name">
-              <div class="name">千年股东</div>
-              <div class="tips">这里是推荐理由这里是推荐理由</div>
-            </div>
-            <div class="add-fans">
-              <svg class="icon" :class="checked?'checked':''" aria-hidden="true" @click="addFans">
-                <use xlink:href="#icon-xuanzhong-"></use>
-              </svg>
-            </div>
+            <img :src="defaultImg"></img>
+            <div class="user-group haiboshi"></div>
+          </div>
+          <div class="user-name">
+            <div class="name">千年股东</div>
+            <div class="tips">这里是推荐理由这里是推荐理由</div>
+          </div>
+          <div class="add-fans">
+            <svg class="icon" :class="checked?'checked':''" aria-hidden="true" @click="addFans">
+              <use xlink:href="#icon-xuanzhong-"></use>
+            </svg>
+          </div>
         </nb-list-item>
       </nb-list>
       <div class="go-sns">关注并开启社区之旅</div>
     </div>
     <div class="sns-body">
-      <div class="no-content">
+      <div class="no-content" v-if="false">
         <div class="no-img"></div>
         <div>暂无内容</div>
+      </div>
+      <div class="comment-list">
+        <div class="list-title">朋友动态</div>
+        <div class="comment-item" v-for="i in [1,2,3]">
+          <div class="comment-head">
+            <div class="img-src">
+              <img :src="defaultImg"></img>
+              <div class="user-group haiboshi"></div>
+            </div>
+            <div class="user-name">
+              <div class="name">千年股东
+                <div class="xunzhang">{{i}}枚</div>
+              </div>
+              <div class="time">昨天 23:66</div>
+            </div>
+          </div>
+          <div class="comment-content">
+            <span>#这里是话题名称#</span> 这里评论内容，加拿大应美方要逮捕华为 CFO，任正非女儿孟晚舟，中国中国驻加 使馆强烈抗议抗议抗议抗议抗议抗议抗
+          </div>
+          <div class="comment-num">
+            <div class="pinglun-num">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-pinglun"></use>
+              </svg> 999
+            </div>
+            <div class="dianzan-num">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-dianzan-weidianliang"></use>
+              </svg> 888
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
