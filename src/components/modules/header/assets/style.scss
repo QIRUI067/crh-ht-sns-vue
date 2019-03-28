@@ -1,0 +1,21 @@
+.header{
+  display: flex;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #1E2B46;
+  font-size: 36px;
+  .back-icon{
+    color: white;
+    flex: 1;
+  }
+  .header-title{
+    color: white;
+    flex: 5;
+  }
+  .right-icon{
+    flex: 1;
+    color: white;
+  }
+}

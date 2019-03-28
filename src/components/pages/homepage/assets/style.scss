@@ -1,0 +1,129 @@
+.sns-header {
+  .img-src {
+    position: relative;
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      height: 66px;
+    }
+
+    .user-group {
+      position: absolute;
+      bottom: 0px;
+      right: 5px;
+      height: 26px;
+      width: 26px;
+
+      &.bigv {
+        background: url('./img/bigv@2x.png') center no-repeat;
+        background-size: contain;
+      }
+
+      &.haiboshi {
+        background: url('./img/haiboshi@2x.png') center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .user-name {
+    flex: 6;
+    color: #385F9C;
+    font-size: 30px;
+    padding-left: 10px;
+
+    .name {
+      padding: 0 0 10px;
+
+      &.vip {
+        color: red;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .tips {
+      color: #6B6B6B;
+      font-size: 26px;
+    }
+  }
+
+  .is-fans {
+    flex: 3;
+    text-align: right;
+    color: #CCCCCC;
+
+    span {
+      color: #4591DF;
+      font-size: 30px;
+    }
+  }
+}
+
+.dh20 {
+  height: 20px;
+  background-color: #F1F1F1;
+}
+
+.topic-area {
+  height: 427px;
+
+  .area-title {
+    padding-left: 40px;
+    height: 100px;
+    line-height: 100px;
+
+    img {
+      width: 32px;
+      height: 30px;
+      border-radius: 3px;
+    }
+
+    span {
+      width: 138px;
+      height: 34px;
+      font-size: 36px;
+      font-weight: bold;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+  .topic-list{
+    height: 268px;
+    width: calc(100% - 80px);
+    background: #479BF7 url('./img/topic_bg@2x.png') right bottom no-repeat;
+    background-size: 206px;
+    margin: 0 auto;
+    box-shadow:4px 9px 8px 0px rgba(11,11,11,0.1);
+    border-radius:17px;
+    padding-left: 30px;
+    padding-top: 22px;
+    .topic-title{
+      width:536px;
+      height:88px;
+      font-size:36px;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      line-height:88px;
+    }
+    .active-num{
+      height:64px;
+      font-size:28px;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      line-height:30px;
+      svg{
+        font-size: 32px;
+      }
+    }
+    .topic-button{
+      button{
+        width:222px;
+        height:68px;
+        box-shadow:3px 5px 9px 0px rgba(46,81,120,0.26);
+        border-radius:34px;
+      }
+    }
+  }
+}
