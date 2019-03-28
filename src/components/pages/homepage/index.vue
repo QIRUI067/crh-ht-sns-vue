@@ -35,18 +35,42 @@
         <img src="./assets/img/topic@2x.png"/>
         <span>热议话题</span>
       </div>
-      <div class="topic-list">
-        <div class="topic-title">苹果在中国下跌2666666666%，为何股份...</div>
-        <div class="active-num">
-            <svg class="icon" aria-hidden="true">
-              <use xlink:href="#icon-huaticanyurenshu"></use>
-            </svg> 35.3万人已参与话题
+      <div class="topic-list" ref="topic-list">
+        <div class="topic-item">
+          <div class="topic-title">1111苹果在中国下跌2666666666%，为何股份...</div>
+          <div class="active-num">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-huaticanyurenshu"></use>
+              </svg> 35.3万人已参与话题
+          </div>
+          <div class="topic-button">
+            <button>立即参与</button>
+          </div>
         </div>
-        <div class="topic-button">
-          <button>立即参与</button>
+        <div class="topic-item topic-item-1">
+          <div class="topic-title">2222苹果在中国下跌2666666666%，为何股份...</div>
+          <div class="active-num">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-huaticanyurenshu"></use>
+              </svg> 35.3万人已参与话题
+          </div>
+          <div class="topic-button">
+            <button>立即参与</button>
+          </div>
+        </div>
+        <div class="topic-item topic-item-2">
+          <div class="topic-title">3333苹果在中国下跌2666666666%，为何股份...</div>
+          <div class="active-num">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-huaticanyurenshu"></use>
+              </svg> 35.3万人已参与话题
+          </div>
+          <div class="topic-button">
+            <button>立即参与</button>
+          </div>
         </div>
       </div>
-            <!-- 卡片分页圆点 -->
+      <!-- 卡片分页圆点 -->
       <div class="pagination">
         <i v-for="(card, i) in [1,2,3]" :key="i"
           :class="{active: cardIndex === i}"
@@ -62,6 +86,7 @@
   import Component from 'vue-class-component';
   import MHeader from '@module/header'
   import defaultImg from './assets/img/man@2x.png'
+  import Siema from './assets/siema';
   @Component({
     components: {
       MHeader
@@ -72,6 +97,16 @@
     cardIndex = 0;
     mounted() {
       // this.defaultImg = defaultImg;
+      this.topicSlider = new Siema({
+        selector: this.$refs['topic-list'],
+        startIndex: this.cardIndex,
+        onChange: () => {
+          // 滑动卡片修改卡片index
+          this.cardIndex = this.topicSlider.currentSlide;
+          // 将换一换的分页回到0
+          // this.listPage = 0;
+        }
+      });
     }
   }
 </script>

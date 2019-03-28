@@ -7,6 +7,7 @@ import '@lib/rem';
 
 // 全局数据注入
 Vue.prototype.$App = AppGlobal;
+Vue.config.ignoredElements = [/nb-\w*/];
 
 new Vue({
   el: '#app',
