@@ -78,6 +78,27 @@
       </div>
     </div>
     <div class="dh20"></div>
+    <div class="active-user">
+      <div class="active-title">为你精心推荐了以下用户</div>
+      <nb-list>
+        <nb-list-item :height="120">
+          <div class="img-src">
+              <img :src="defaultImg"></img>
+              <div class="user-group haiboshi"></div>
+            </div>
+            <div class="user-name">
+              <div class="name">千年股东</div>
+              <div class="tips">这里是推荐理由这里是推荐理由</div>
+            </div>
+            <div class="add-fans">
+              <svg class="icon" aria-hidden="true">
+                <use xlink:href="#icon-xuanzhong-"></use>
+              </svg>
+            </div>
+        </nb-list-item>
+      </nb-list>
+      <div class="go-sns">关注并开启社区之旅</div>
+    </div>
   </div>
 </template>
 <style lang="scss" src="./assets/style" scoped></style>
