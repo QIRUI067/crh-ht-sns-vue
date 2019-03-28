@@ -89,40 +89,51 @@
       color: rgba(0, 0, 0, 1);
     }
   }
-  .topic-list{
+
+  .topic-list {
     height: 268px;
     width: calc(100% - 80px);
     background: #479BF7 url('./img/topic_bg@2x.png') right bottom no-repeat;
     background-size: 206px;
     margin: 0 auto;
-    box-shadow:4px 9px 8px 0px rgba(11,11,11,0.1);
-    border-radius:17px;
+    box-shadow: 4px 9px 8px 0px rgba(11, 11, 11, 0.1);
+    border-radius: 17px;
     padding-left: 30px;
     padding-top: 22px;
-    .topic-title{
-      width:536px;
-      height:88px;
-      font-size:36px;
-      font-weight:500;
-      color:rgba(255,255,255,1);
-      line-height:88px;
+
+    .topic-title {
+      width: 536px;
+      height: 88px;
+      font-size: 36px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      line-height: 88px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
-    .active-num{
-      height:64px;
-      font-size:28px;
-      font-weight:400;
-      color:rgba(255,255,255,1);
-      line-height:30px;
-      svg{
+
+    .active-num {
+      height: 64px;
+      font-size: 28px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      line-height: 30px;
+
+      svg {
         font-size: 32px;
       }
     }
-    .topic-button{
-      button{
-        width:222px;
-        height:68px;
-        box-shadow:3px 5px 9px 0px rgba(46,81,120,0.26);
-        border-radius:34px;
+
+    .topic-button {
+      button {
+        width: 222px;
+        height: 68px;
+        box-shadow: 3px 5px 9px 0px rgba(46, 81, 120, 0.26);
+        border-radius: 34px;
+        background-color: white;
+        border: none;
+        color: #479BF7;
       }
     }
   }

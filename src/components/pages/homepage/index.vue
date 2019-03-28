@@ -36,7 +36,7 @@
         <span>热议话题</span>
       </div>
       <div class="topic-list">
-        <div class="topic-title">苹果在中国下跌26%，为何股份...</div>
+        <div class="topic-title">苹果在中国下跌2666666666%，为何股份...</div>
         <div class="active-num">
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-huaticanyurenshu"></use>
