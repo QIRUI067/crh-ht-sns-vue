@@ -78,7 +78,7 @@
       </div>
     </div>
     <div class="dh20"></div>
-    <div class="active-user" v-if="false">
+    <div class="active-user" v-if="true">
       <div class="active-title">为你精心推荐了以下用户</div>
       <nb-list>
         <nb-list-item :height="120">
@@ -92,7 +92,7 @@
           </div>
           <div class="add-fans">
             <svg class="icon" :class="checked?'checked':''" aria-hidden="true" @click="addFans">
-              <use xlink:href="#icon-xuanzhong-"></use>
+              <use xlink:href="#icon-xuanzhong"></use>
             </svg>
           </div>
         </nb-list-item>
