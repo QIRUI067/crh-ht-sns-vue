@@ -1,6 +1,7 @@
 <template>
   <div>
     <m-header title="我的粉丝"></m-header>
+    <notice-bar content="你又增加了1个新粉丝，赶紧看看吧～"></notice-bar>
     <div class="active-user" v-if="true">
       <div class="active-title">你可能想关注</div>
       <nb-list top-space="none">
@@ -27,10 +28,12 @@
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import MHeader from '@module/header'
+  import NoticeBar from '@module/notice-bar'
   import defaultImg from '@assets/img/man@2x.png'
   @Component({
     components: {
-      MHeader
+      MHeader,
+      NoticeBar
     },
   })
   export default class HomePage extends Vue {
