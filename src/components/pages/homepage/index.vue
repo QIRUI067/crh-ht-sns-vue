@@ -1,6 +1,6 @@
 <template>
   <div>
-    <m-header title="我的社区"></m-header>
+    <m-header title="我的社区" :right-icon="true"></m-header>
     <div class="sns-header">
       <nb-list top-space="none">
         <nb-list-item :height='132'>

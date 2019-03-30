@@ -4,7 +4,7 @@
     <div class="active-user" v-if="true">
       <div class="active-title">你可能想关注</div>
       <nb-list top-space="none">
-        <nb-list-item :height="120" v-for="i in [1,2,3,4]">
+        <nb-list-item :height="120" v-for="i in [1,2,3,4]" :key="i">
           <div class="img-src">
             <img :src="defaultImg"></img>
             <div class="user-group haiboshi"></div>

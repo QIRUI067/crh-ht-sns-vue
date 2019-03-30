@@ -7,7 +7,7 @@
     </div>
     <div class="header-title">{{title}}</div>
     <div class="right-icon">
-      <svg class="icon" aria-hidden="true">
+      <svg class="icon" aria-hidden="true" v-if="rightIcon">
         <use xlink:href="#icon-nav-gengduo"></use>
       </svg>
     </div>
@@ -19,7 +19,8 @@
   import Component from 'vue-class-component';
   @Component({
     props: {
-      title: String
+      title: String,
+      rightIcon: Boolean = false,
     }
   })
   export default class MHeader extends Vue{
