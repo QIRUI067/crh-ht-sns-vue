@@ -97,6 +97,7 @@
           </div>
         </nb-list-item>
       </nb-list>
+      <div class="dh120"></div>
       <div class="go-sns">关注并开启社区之旅</div>
     </div>
     <div class="sns-body" v-if="true">
@@ -137,7 +138,6 @@
         </div>
       </div>
     </div>
-    <div class="dh120"></div>
   </div>
 </template>
 <style lang="scss" src="./assets/style" scoped></style>
