@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <div class="back-icon">
+    <div class="back-icon" @click="goBack">
       <svg class="icon" aria-hidden="true">
         <use xlink:href="#icon-fanhui"></use>
       </svg>
@@ -25,6 +25,9 @@
   export default class MHeader extends Vue{
     mounted() {
       console.log(this.title)
+    };
+    goBack(){
+      this.$router.go(-1);
     }
   }
 </script>

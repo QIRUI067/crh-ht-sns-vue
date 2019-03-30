@@ -20,7 +20,7 @@
               </svg> 99万+
             </div>
           </div>
-          <div class="is-fans">
+          <div class="is-fans" @click="goMyPage">
             <span>主页</span>&nbsp;
             <svg class="icon" aria-hidden="true">
               <use xlink:href="#icon-gengduo"></use>
@@ -32,7 +32,7 @@
     <div class="dh20"></div>
     <div class="topic-area">
       <div class="area-title">
-        <img src="./assets/img/topic@2x.png"/>
+        <img src="@assets/img/topic@2x.png"/>
         <span>热议话题</span>
       </div>
       <div class="topic-list" ref="topic-list">
@@ -100,7 +100,7 @@
       <div class="dh120"></div>
       <div class="go-sns">关注并开启社区之旅</div>
     </div>
-    <div class="sns-body" v-if="true">
+    <div class="sns-body" v-if="false">
       <div class="no-content" v-if="false">
         <div class="no-img"></div>
         <div>暂无内容</div>
@@ -159,7 +159,11 @@
     addFans(){
       console.log("2111")
       this.checked = !this.checked;
-    }
+    };
+    goMyPage(){
+      console.log("goM")
+      this.$router.push("/fans");
+    };
     mounted() {
       this.topicSlider = new Siema({
         selector: this.$refs['topic-list'],

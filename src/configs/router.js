@@ -10,10 +10,16 @@ Vue.use(Router);
 let router = new Router({
   routes: [
     {
-      // 首页
+      // 我的社区首页
       path: '/',
       name: 'homepage',
       component: () => import('@page/homepage/index.vue')
+    },
+    {
+      // 我的粉丝
+      path: '/fans',
+      name: 'fans',
+      component: () => import('@page/fans/index.vue')
     }
   ]
 });
