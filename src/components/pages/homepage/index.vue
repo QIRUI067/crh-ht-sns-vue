@@ -30,53 +30,7 @@
       </nb-list>
     </div>
     <div class="dh20"></div>
-    <div class="topic-area">
-      <div class="area-title">
-        <img src="@assets/img/topic@2x.png"/>
-        <span>热议话题</span>
-      </div>
-      <div class="topic-list" ref="topic-list">
-        <div class="topic-item">
-          <div class="topic-title">1111苹果在中国下跌2666666666%，为何股份...</div>
-          <div class="active-num">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-huaticanyurenshu"></use>
-              </svg> 35.3万人已参与话题
-          </div>
-          <div class="topic-button">
-            <button>立即参与</button>
-          </div>
-        </div>
-        <div class="topic-item topic-item-1">
-          <div class="topic-title">2222苹果在中国下跌2666666666%，为何股份...</div>
-          <div class="active-num">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-huaticanyurenshu"></use>
-              </svg> 35.3万人已参与话题
-          </div>
-          <div class="topic-button">
-            <button>立即参与</button>
-          </div>
-        </div>
-        <div class="topic-item topic-item-2">
-          <div class="topic-title">3333苹果在中国下跌2666666666%，为何股份...</div>
-          <div class="active-num">
-              <svg class="icon" aria-hidden="true">
-                <use xlink:href="#icon-huaticanyurenshu"></use>
-              </svg> 35.3万人已参与话题
-          </div>
-          <div class="topic-button">
-            <button>立即参与</button>
-          </div>
-        </div>
-      </div>
-      <!-- 卡片分页圆点 -->
-      <div class="pagination">
-        <i v-for="(card, i) in [1,2,3]" :key="i"
-          :class="{active: cardIndex === i}"
-        ></i>
-      </div>
-    </div>
+    <hot-topic :topic-list = "[0,1,2]"></hot-topic>
     <div class="dh20"></div>
     <div class="active-user" v-if="true">
       <div class="active-title">为你精心推荐了以下用户</div>
@@ -145,16 +99,17 @@
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import MHeader from '@module/header'
+  import HotTopic from '@module/hot-topic'
   import defaultImg from '@assets/img/man@2x.png'
-  import Siema from '@lib/siema';
+ 
   @Component({
     components: {
-      MHeader
+      MHeader,
+      HotTopic
     },
   })
   export default class HomePage extends Vue {
     defaultImg = defaultImg;
-    cardIndex = 0;
     checked = false;
     addFans(){
       console.log("2111")
@@ -174,14 +129,6 @@
       });
     };
     mounted() {
-      this.topicSlider = new Siema({
-        selector: this.$refs['topic-list'],
-        startIndex: this.cardIndex,
-        onChange: () => {
-          // 滑动卡片修改卡片index
-          this.cardIndex = this.topicSlider.currentSlide;
-        }
-      });
     }
   }
 </script>
