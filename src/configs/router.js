@@ -20,6 +20,12 @@ let router = new Router({
       path: '/fans',
       name: 'fans',
       component: () => import('@page/fans/index.vue')
+    },
+    {
+      // 我关注的人
+      path: '/follow',
+      name: 'follow',
+      component: () => import('@page/follow/index.vue')
     }
   ]
 });

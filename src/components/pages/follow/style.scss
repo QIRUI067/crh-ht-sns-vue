@@ -1,0 +1,92 @@
+
+.dh20 {
+  height: 20px;
+}
+.dh120 {
+  height: 120px;
+}
+
+.active-user {
+  background-color: white;
+  .active-title {
+    padding-left: 30px;
+    height: 76px;
+    line-height: 76px;
+    font-size: 31px;
+    font-weight: 400;
+    color: rgba(45, 45, 45, 1);
+    border-bottom: 1px solid rgba(239, 240, 239, 1);
+  }
+
+  .img-src {
+    position: relative;
+    flex: 1;
+
+    img {
+      border-radius: 50%;
+      height: 66px;
+    }
+
+    .user-group {
+      position: absolute;
+      bottom: 0px;
+      right: 7px;
+      height: 26px;
+      width: 26px;
+
+      &.bigv {
+        background: url('~@assets/img/bigv@2x.png') center no-repeat;
+        background-size: contain;
+      }
+
+      &.haiboshi {
+        background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  .user-name {
+    flex: 6;
+    color: #385F9C;
+
+    .name {
+      line-height: 55px;
+
+      &.vip {
+        color:rgba(175,107,37,1);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    .tips {
+      font-size: 28px;
+      font-size: 13px;
+      color: #AFAFAF;
+    }
+  }
+
+  .add-fans {
+    flex:3;
+    text-align: right;
+    button{
+      width: 140px;
+      height: 52px;
+      border-radius: 8px;
+      text-align: center;
+      font-size:28px;
+      &.not-fans{
+        border: 2px solid rgba(217, 217, 217, 1);
+        color: rgba(153,153,153,1);
+        background-color: rgba(242,142,54,0);
+      }
+      &.fans{
+        border: 2px solid #D9D9D9;
+        color: #999999;
+        background-color: #D9D9D9;
+      }
+    }
+  }
+}
