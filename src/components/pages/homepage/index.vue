@@ -140,13 +140,13 @@
     </div>
   </div>
 </template>
-<style lang="scss" src="./assets/style" scoped></style>
+<style lang="scss" src="./style" scoped></style>
 <script>
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import MHeader from '@module/header'
-  import defaultImg from './assets/img/man@2x.png'
-  import Siema from './assets/siema';
+  import defaultImg from '@assets/img/man@2x.png'
+  import Siema from '@lib/siema';
   @Component({
     components: {
       MHeader
