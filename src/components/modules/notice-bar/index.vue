@@ -25,7 +25,6 @@
   export default class MHeader extends Vue{
     isOpen = true;
     mounted() {
-      console.log(this.content)
     };
     closeNotice(){
       this.isOpen = false;

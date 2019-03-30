@@ -1,10 +1,9 @@
 <template>
   <div>
     <m-header title="我的粉丝"></m-header>
-    <notice-bar content="你又增加了1个新粉丝，赶紧看看吧～"></notice-bar>
-    <div class="active-user" v-if="true">
-      <div class="active-title">你可能想关注</div>
-      <nb-list top-space="none">
+    <notice-bar content="你又增加了1个新粉丝，赶紧看看吧～" v-if="true"></notice-bar>
+    <div class="active-user">
+      <nb-list top-space="none" v-if="true">
         <nb-list-item :height="120" v-for="i in [1,2,3,4]" :key="i">
           <div class="img-src">
             <img :src="defaultImg"></img>
@@ -20,6 +19,10 @@
           </div>
         </nb-list-item>
       </nb-list>
+      <div class="no-fans" v-if="false">
+        <div class="no-img"></div>
+        <div>多发评论更容易被关注哦～</div>
+      </div>
     </div>
   </div>
 </template>

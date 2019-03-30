@@ -161,9 +161,8 @@
       this.checked = !this.checked;
     };
     goMyPage(){
-      console.log("goM")
-      this.$router.push("/follow");
-      // this.$router.push("/fans");
+      // this.$router.push("/follow");
+      this.$router.push("/fans");
     };
     mounted() {
       this.topicSlider = new Siema({
