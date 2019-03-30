@@ -14,8 +14,8 @@
             <div class="tips">这里是推荐理由这里是推荐理由</div>
           </div>
           <div class="add-fans">
-            <button class="fans" v-if="isFans">互相关注</button>
-            <button class="not-fans" v-if="!isFans">已关注</button>
+            <button class="fans" v-if="isFans" @click="cancelFollow">互相关注</button>
+            <button class="not-fans" v-if="!isFans" @click="cancelFollow">已关注</button>
           </div>
         </nb-list-item>
       </nb-list>
@@ -38,6 +38,13 @@
     cardIndex = 0;
     isFans = true;
     mounted() {
-    }
+    };
+    cancelFollow(){
+      this.$App.refs.modal.confirm(`<div style='text-align: center'>确定取消关注？</div>`, {
+        onOk: () => {
+          console.log("clickOk")
+        }
+      });
+    };
   }
 </script>

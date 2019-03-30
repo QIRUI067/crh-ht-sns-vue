@@ -98,7 +98,7 @@
         </nb-list-item>
       </nb-list>
       <div class="dh120"></div>
-      <div class="go-sns">关注并开启社区之旅</div>
+      <div class="go-sns" @click="begainSns">关注并开启社区之旅</div>
     </div>
     <div class="sns-body" v-if="false">
       <div class="no-content" v-if="false">
@@ -161,8 +161,17 @@
       this.checked = !this.checked;
     };
     goMyPage(){
-      // this.$router.push("/follow");
-      this.$router.push("/fans");
+      this.$router.push("/follow");
+      // this.$router.push("/fans");
+    };
+    begainSns(){
+      this.$App.refs.modal.alert('请至少关注一个用户哦～', {
+        title:"温馨提示",
+        okText:"好的",
+        onOk: () => {
+          console.log("clickOk")
+        }
+      });
     };
     mounted() {
       this.topicSlider = new Siema({
