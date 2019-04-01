@@ -25,7 +25,7 @@
 
   .topic-list {
     position: relative;
-    width: 3000px;
+    width: calc(100vw - 20px);
     padding-left: 20px;
 
     .topic-item {

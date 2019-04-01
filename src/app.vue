@@ -4,9 +4,9 @@
     <Toast ref="toast" />
     <!-- 全局modal -->
     <Modal ref="modal" />
-    <RouterTransition type="slide">
+    <!-- <RouterTransition type="slide"> -->
       <router-view></router-view>
-    </RouterTransition>
+    <!-- </RouterTransition> -->
   </div>
 </template>
 

@@ -5,7 +5,7 @@
       <span>热议话题</span>
     </div>
     <div class="topic-list" ref="topic-list">
-      <div class="topic-item" :class="'topic-item-'+i" v-for="i in topicList">
+      <div class="topic-item" :class="'topic-item-'+i" v-for="(topic,i) in topicList" :key="i">
         <div class="topic-title">1111苹果在中国下跌2666666666%，为何股份...</div>
         <div class="active-num">
             <svg class="icon" aria-hidden="true">
