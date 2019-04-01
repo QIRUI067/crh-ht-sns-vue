@@ -116,8 +116,8 @@
       this.checked = !this.checked;
     };
     goMyPage(){
-      this.$router.push("/follow");
-      // this.$router.push("/fans");
+      // this.$router.push("/follow");
+      this.$router.push("/fans");
     };
     begainSns(){
       this.$App.refs.modal.alert('请至少关注一个用户哦～', {

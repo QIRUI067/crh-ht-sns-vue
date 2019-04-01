@@ -42,7 +42,7 @@
   export default class HomePage extends Vue {
     defaultImg = defaultImg;
     cardIndex = 0;
-    isFans = false;
+    isFans = true;
     addFans(){
       console.log("2111")
       // this.checked = !this.checked;
