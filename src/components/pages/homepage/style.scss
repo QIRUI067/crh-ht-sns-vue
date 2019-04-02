@@ -1,37 +1,9 @@
 .sns-header {
-  .img-src {
-    position: relative;
-    flex: 1;
-
-    img {
-      border-radius: 50%;
-      height: 66px;
-    }
-
-    .user-group {
-      position: absolute;
-      bottom: 0px;
-      right: 5px;
-      height: 26px;
-      width: 26px;
-
-      &.bigv {
-        background: url('~@assets/img/bigv@2x.png') center no-repeat;
-        background-size: contain;
-      }
-
-      &.haiboshi {
-        background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
-        background-size: contain;
-      }
-    }
-  }
 
   .user-name {
     flex: 6;
     color: #385F9C;
     font-size: 30px;
-    padding-left: 10px;
 
     .name {
       padding: 0 0 10px;
@@ -83,38 +55,9 @@
     border-bottom: 1px solid rgba(239, 240, 239, 1);
   }
 
-  .img-src {
-    position: relative;
-    flex: 1;
-
-    img {
-      border-radius: 50%;
-      height: 66px;
-    }
-
-    .user-group {
-      position: absolute;
-      bottom: 0px;
-      right: 30px;
-      height: 26px;
-      width: 26px;
-
-      &.bigv {
-        background: url('~@assets/img/bigv@2x.png') center no-repeat;
-        background-size: contain;
-      }
-
-      &.haiboshi {
-        background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
-        background-size: contain;
-      }
-    }
-  }
-
   .user-name {
     flex: 6;
     color: #385F9C;
-
     .name {
       line-height: 55px;
 
@@ -193,38 +136,9 @@
         padding-left: 30px;
         padding-top: 20px;
 
-        .img-src {
-          position: relative;
-          flex: 1;
-
-          img {
-            border-radius: 50%;
-            height: 66px;
-          }
-
-          .user-group {
-            position: absolute;
-            bottom: 17px;
-            right: 30px;
-            height: 26px;
-            width: 26px;
-
-            &.bigv {
-              background: url('~@assets/img/bigv@2x.png') center no-repeat;
-              background-size: contain;
-            }
-
-            &.haiboshi {
-              background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
-              background-size: contain;
-            }
-          }
-        }
-
         .user-name {
           flex: 6;
           color: #385F9C;
-
           .name {
             &.vip {
               color: red;

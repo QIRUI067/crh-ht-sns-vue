@@ -1,0 +1,78 @@
+
+.user-avatar {
+  background-color: white;
+  padding-right: 15px;
+  .img-src {
+    position: relative;
+    flex: 1;
+    &.img_size_66{
+      img {
+        border-radius: 50%;
+        height: 66px;
+      }
+  
+      .user-group {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 26px;
+        width: 26px;
+        &.user_type_2 {
+          background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
+          background-size: contain;
+        }
+  
+        &.user_type_3 {
+          background: url('~@assets/img/bigv@2x.png') center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    &.img_size_76{
+      img {
+        border-radius: 50%;
+        height: 76px;
+      }
+  
+      .user-group {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 26px;
+        width: 26px;
+        &.user_type_2 {
+          background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
+          background-size: contain;
+        }
+  
+        &.user_type_3 {
+          background: url('~@assets/img/bigv@2x.png') center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    &.img_size_126{
+      img {
+        border-radius: 50%;
+        height: 126px;
+      }
+  
+      .user-group {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        height: 40px;
+        width: 40px;
+        &.user_type_2 {
+          background: url('~@assets/img/haiboshi@2x.png') center no-repeat;
+          background-size: contain;
+        }
+  
+        &.user_type_3 {
+          background: url('~@assets/img/bigv@2x.png') center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}

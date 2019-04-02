@@ -5,10 +5,7 @@
       <div class="sns-header">
         <nb-list top-space="none">
           <nb-list-item :height='132'>
-            <div class="img-src">
-              <img :src="defaultImg"/>
-              <div class="user-group haiboshi"></div>
-            </div>
+            <avatar avatar="" userType="2" size="66"/>
             <div class="user-name">
               <div class="name">千年股东</div>
               <div class="tips">
@@ -34,14 +31,11 @@
       <hot-topic :topic-list = "[0,1,2]"></hot-topic>
       <div class="dh20"></div>
 
-      <div class="active-user" v-if="false">
+      <div class="active-user">
         <div class="active-title">为你精心推荐了以下用户</div>
         <nb-list top-space="none">
           <nb-list-item :height="120">
-            <div class="img-src">
-              <img :src="defaultImg"/>
-              <div class="user-group haiboshi"></div>
-            </div>
+            <avatar avatar="" userType="2" size="76"/>
             <div class="user-name">
               <div class="name">千年股东</div>
               <div class="tips">这里是推荐理由这里是推荐理由</div>
@@ -65,10 +59,7 @@
           <div class="list-title">朋友动态</div>
           <div class="comment-item" v-for="i in [1,2,3]" :key="i">
             <div class="comment-head">
-              <div class="img-src">
-                <img :src="defaultImg"/>
-                <div class="user-group haiboshi"></div>
-              </div>
+              <avatar avatar="" userType="2" size="66"/>
               <div class="user-name">
                 <div class="name">千年股东
                   <div class="xunzhang">{{i}}枚</div>
@@ -105,6 +96,7 @@
   import Vue from 'vue';
   import Component from 'vue-class-component';
   import MHeader from '@module/header'
+  import Avatar from '@module/avatar'
   import HotTopic from '@module/hot-topic'
   import defaultImg from '@assets/img/man@2x.png'
   import Refresh from '@module/refresh';
@@ -113,7 +105,8 @@
     components: {
       MHeader,
       HotTopic,
-      Refresh
+      Refresh,
+      Avatar
     },
   })
   export default class HomePage extends Vue {
