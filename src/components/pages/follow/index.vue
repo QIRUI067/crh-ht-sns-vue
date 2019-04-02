@@ -6,7 +6,7 @@
       <nb-list top-space="none">
         <nb-list-item :height="120" v-for="i in [1,2,3,4]" :key="i">
           <div class="img-src">
-            <img :src="defaultImg"></img>
+            <img :src="defaultImg"/>
             <div class="user-group haiboshi"></div>
           </div>
           <div class="user-name">

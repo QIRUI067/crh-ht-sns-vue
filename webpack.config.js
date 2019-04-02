@@ -154,6 +154,7 @@ let config = {
       // favicon: './src/assets/favicon.ico',
       template: './index.html',
       filename: './index.html',
+      chunksSortMode: 'none',
       inject: 'body'
     }),
 
